@@ -10,3 +10,5 @@ git add .
 
 git commit -m "step 5"
 
+curl -u "smit1888" https://api.github.com/user/repos -d '{"name":"FinalProjectRepository","private":"true"}'
+
