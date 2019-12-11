@@ -1,10 +1,12 @@
 mkdir  ~/Documents/FinalProjectRepository
 
-cd FinalProjectRepository
+cd ~/Documents/FinalProjectRepository/
 
 git init
 
-cp  /Library/WebServer/Documents/index.html  ~/Documents/FinalProjectRepository
+cp  /Library/WebServer/Documents/index.html  ~/documents/FinalProjectRepository/
+
+
 
 git add .
 
@@ -12,6 +14,18 @@ git commit -m "step 5"
 
 curl -u "smit1888" https://api.github.com/user/repos -d '{"name":"FinalProjectRepository","private":"true"}'
 
- git push --set-upstream https://github.com/smit1888/FinalProjectRepository.git master
-
  
+git push --set-upstream https://github.com/smit1888/FinalProjectRepository.git master
+
+
+ssh smit1888@52.149.168.227
+
+git clone https://github.com/smit1888/FinalProjectRepository.git
+
+cd FinalProjectRepository
+
+rm -rf .git
+
+sudo mv FinalProjectRepository/ /var/www/html
+
+sudo systemctl start nginx
