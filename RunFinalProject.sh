@@ -31,3 +31,6 @@ sudo mv FinalProjectRepository/ /var/www/html
 sudo systemctl start nginx
 
 open -a safari http://smit1888.hopto.org/
+
+/Users/smitbeladiya/Library/Android/sdk/emulator/emulator -avd Nexus_10_API_25 &
+
