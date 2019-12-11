@@ -18,19 +18,13 @@ curl -u "smit1888" https://api.github.com/user/repos -d '{"name":"FinalProjectRe
 git push --set-upstream https://github.com/smit1888/FinalProjectRepository.git master
 
 
-ssh smit1888@52.149.168.227
-
-git clone https://github.com/smit1888/FinalProjectRepository.git
-
-cd FinalProjectRepository
-
-rm -rf .git
-
-sudo mv FinalProjectRepository/ /var/www/html
-
-sudo systemctl start nginx
+ssh smit1888@52.149.168.227'git clone https://github.com/smit1888/FinalProjectRepository.git;cd FinalProjectRepository;cd FinalProjectRepository;rm -rf .git;sudo mv FinalProjectRepository/ /var/www/html;sudo systemctl start nginx'
 
 open -a safari http://smit1888.hopto.org/
 
 /Users/smitbeladiya/Library/Android/sdk/emulator/emulator -avd Nexus_10_API_25 &
 
+
+./adb start-server
+
+./adb shell am start -a android.intent.action.VIEW -d http://smit1888.hopto.org/
