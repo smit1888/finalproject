@@ -29,3 +29,5 @@ rm -rf .git
 sudo mv FinalProjectRepository/ /var/www/html
 
 sudo systemctl start nginx
+
+open -a safari http://smit1888.hopto.org/
