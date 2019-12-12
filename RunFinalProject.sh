@@ -54,3 +54,5 @@ xcrun simctl boot 3CEADAF4-AAC9-4636-8D9E-36A977F39CC0
 open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app
 
 xcrun simctl openurl booted "http://localhost:1234"
+
+ssh smit1888@52.149.168.227 'sudo apt-get update; shutdown -h now'
