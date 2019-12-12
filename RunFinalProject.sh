@@ -31,3 +31,16 @@ open -a safari http://smit1888.hopto.org/
 
 echo FROM ubuntu:18.04>>Dockerfile
 
+echo RUN apt update>>Dockerfile
+
+echo RUN apt install -y nginx && apt install -y unzip>>Dockerfile
+
+echo COPY Archive.zip  /var/www/html>>Dockerfile
+
+echo WORKDIR /var/www/html>>Dockerfile
+
+echo RUN unzip Archive.zip>>Dockerfile
+
+echo CMD ["/usr/sbin/nginx", "-g" , "daemon off;"]>>Dockerfile
+
+echo EXPOSE 80>>Dockerfile
