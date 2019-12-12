@@ -56,3 +56,5 @@ open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app
 xcrun simctl openurl booted "http://localhost:1234"
 
 ssh smit1888@52.149.168.227 'sudo apt-get update; shutdown -h now'
+
+open -a safari http://smit1888.hopto.org/
