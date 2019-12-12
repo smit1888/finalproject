@@ -28,3 +28,6 @@ open -a safari http://smit1888.hopto.org/
 ./adb start-server
 
 ./adb shell am start -a android.intent.action.VIEW -d http://smit1888.hopto.org/
+
+echo FROM ubuntu:18.04>>Dockerfile
+
